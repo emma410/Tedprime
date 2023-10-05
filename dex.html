@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dex.css">
+  <link rel="shortcut icon" href="tedprimelogo.jpg" type="image/x-icon">
+  <title>Tedprime Form</title>
+</head>
+<body>
+  <!-- <img src="/images/tedprimelogo.png" alt="" width="200px"> -->
+  <div class="container">
+    <div class="form">
+      <h2 style="text-align: center; color: green;">Course Registration Form</h2>
+      <h2>Choose Course</h2>
+      <span class="stage">Stage 2/2</span>
+      <form id="courseDetailsForm">
+        <label class="fom" for="courses">Courses:</label>
+        <select id="courses" required>
+          <option value="">Select Course</option>
+          <option value="DATA ANALYTICS">DATA ANALYTICS</option>
+          <option value="CYBERSECURITY">CYBERSECURITY</option>
+          <option value="WEB DEVELOPMENT">WEB DEVELOPMENT</option>
+          <option value="PYTHON PROGRAMMING">PYTHON PROGRAMMING</option>
+          <option value="PRODUCT DESIGN">PRODUCT DESIGN</option>
+          <option value="DIGITAL LITERACY">DIGITAL LITERACY</option>
+          <option value="SOFTWARE DEVELOPMENT (FRONTEND & BACKEND)">SOFTWARE DEVELOPMENT (FRONTEND & BACKEND)</option>
+        </select>
+
+        <label class="fom" for="priorKnowledge">Prior Knowledge:</label>
+        <select id="priorKnowledge" required>
+          <option value="">Select Prior Knowledge</option>
+          <option value="none">None</option>
+          <option value="Python">Python</option>
+          <option value="Javascript">Javascript</option>
+          <option value="Html">Html</option>
+          <option value="Css">Css</option>
+          <option value="Microsoft Excel">Microsoft Excel</option>
+          <option value="Microsoft Word">Microsoft Word</option>
+          <option value="Microsoft Powerpoint">Microsoft Powerpoint</option>
+        </select>
+
+        <label class="fom" for="trainingType">Training Type:</label>
+        <select id="trainingType" required>
+          <option value="">Select Training Type</option>
+          <option value="Online">Online</option>
+          <option value="Onsite">Onsite</option>
+        </select>
+
+        <!-- <label for="moreAboutYou">Tell us more about you:</label> -->
+        <br><br><br><textarea class="fom" placeholder="Tell us more about you (optional)" id="moreAboutYou" rows="7" style="width: 94%;"></textarea><br>
+      <div class="buttons"> 
+        <a href="index.html"><button type="button">Back</button></a>
+        <button type="button" onclick="submitForm()">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="dex.js"></script>
+</body>
+</html>
